@@ -44,7 +44,7 @@ public class SimpleIOMath {
                     continue;
                 }
 
-                age = parsedAge; // valid
+                age = parsedAge;
                 break;
 
             } catch (Exception e) {
@@ -52,7 +52,6 @@ public class SimpleIOMath {
             }
         }
 
-        // Question 3: Favorite number
         while (true) {
             try {
                 System.out.print("Question 3: What is your favorite number? ");
@@ -66,7 +65,7 @@ public class SimpleIOMath {
                 }
 
                 favNumber = Integer.parseInt(input);
-                break; // valid → exit loop
+                break;
             } catch (Exception e) {
                 System.out.println("Invalid input, please enter a valid number.");
             }
@@ -74,7 +73,7 @@ public class SimpleIOMath {
     }
 
     private boolean isPrime(int n) {
-        if (n <= 1) return false; // fix for 1 and negatives
+        if (n <= 1) return false;
         for (int i = 2; i <= Math.sqrt(n) + 1; i++) {
             if (n % i == 0) {
                 return false;
